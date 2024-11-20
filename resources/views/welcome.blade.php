@@ -1,6 +1,37 @@
 <x-landing-page.base>
     <div class="h-full w-full flex justify-between">
-        <img src="{{ asset('bg-image.jpg') }}" class="w-1/2 object-center" />
+        <div class="w-1/2">
+            <div class="w-full h-[35rem] relative mb-10">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/2.jpg')}}" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/3.jpg')}}" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/4.jpg')}}" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/5.jpg')}}" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/6.jpg')}}" alt="" srcset="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{asset('images/7.jpg')}}" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
 
         <div class="grow flex flex-col justify-center items-center">
             <div class="w-5/6 flex flex-col gap-2">
@@ -84,3 +115,26 @@
         </div>
       </section>
 </x-landing-page.base>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
