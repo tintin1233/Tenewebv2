@@ -6,7 +6,10 @@
     .checker{
         font-size:2vh;
     }
-
+.text-primary {
+    --tw-text-opacity: 1;
+    color: var(--fallback-p, oklch(var(--p) / var(--tw-text-opacity))) !important;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
 
