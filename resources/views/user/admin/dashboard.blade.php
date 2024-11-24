@@ -1,26 +1,34 @@
 @php
     $columns = ['Name', 'Email', 'Tenant Type', 'Unit No.', 'Tenement'];
 @endphp
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <x-dashboard.admin.base>
 
     <div class="min-h-screen w-full flex flex-col gap-2">
-        <div class="grid grid-cols-4 grid-flow-row gap-2 min-h-32">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12">
             <x-card label="Announcements" icon="fi fi-rr-megaphone"  :total="$totalAnnouncements"/>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12">
             <x-card label="Collections" icon="fi fi-rr-peso-sign" :total="'₱ ' . $totalCollections"/>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-12">
             <x-card label="Tenants" icon="fi fi-rr-house-chimney-user" :total="$totalTenant" />
+            </div>
             {{-- <x-card label="Unverified Tenants" icon="fi fi-rr-house-chimney-user" :total="count($unverifiedTenants)" /> --}}
         </div>
 
 
-        <div class="grid grid-cols-2 grid-flow-row gap-2">
+        <div class="row">
 
-            <div class="grow flex flex-col gap-2">
+            <div class="col-md-6 col-xs-12 col-sm-12">
                 <h1 class="text-lg text-accent bg-primary rounded-t-lg p-2">Monthly Amortization</h1>
                 <x-pie-chart :data_set="$billAmortization" />
             </div>
 
-            <div class="grow flex flex-col gap-2">
+            <div class="col-md-6 col-xs-12 col-sm-12">
                 <h1 class="text-lg text-accent bg-primary rounded-t-lg p-2">Monthly Dues</h1>
                 <x-pie-chart :data_set="$billMonthlyDue" />
             </div>
