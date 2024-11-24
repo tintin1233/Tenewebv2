@@ -2,24 +2,34 @@
     use App\Enums\GeneralStatus;
 @endphp
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <x-dashboard.admin.base>
     <x-dashboard.page-label :back_url="route('admin.rooms.index')" :title="$room->room_number"/>
 
 
     <div class="panel p-2 flex flex-col gap-2">
-        <div class="grid grid-cols-4 grid-flow-row gap-2 h-32">
+        <div class="row">
+            <div class="col-md-3 col-xs-6 col-sm-6">
             <x-card  />
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6">
             <x-card icon="fi fi-rr-house-chimney-user" label="tenant" :total="$room->tenants()->count()" />
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6">
             <x-card label="Paid bills" icon="fi fi-rr-hand-bill" :total="$room->bills()->where('status', GeneralStatus::PAID->value)->count()" />
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6">
             <x-card label="Unpaid bills" icon="fi fi-rr-hand-bill" :total="$room->bills()->where('status', GeneralStatus::UNPAID->value)->count()" />
+            </div>
         </div>
 
-        <div class="flex gap-2">
-            <div class="grow flex flex-col gap-2">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 col-sm-12">
                 <h1 class="text-lg font-bold text-primary">Sales</h1>
                 <x-pie-chart />
             </div>
-            <div class="grow">
+            <div class="col-md-6 col-xs-12 col-sm-12">
                 <h1 class="text-lg font-bold text-primary">Sales</h1>
                 <x-line-chart />
             </div>
