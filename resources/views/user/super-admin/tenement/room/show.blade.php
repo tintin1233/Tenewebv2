@@ -107,13 +107,23 @@
 
                     <div class="flex flex-col gap-2 mt-2">
                         <x-table-body :columns="['name', 'status', 'Date of Birth', 'Relationship with Head']" label="">
+
+                                <tr>
+                                    <td>123</td>
+                                    <td>123</td>
+                                    <td>123</td>
+                                    <td>123</td>
+                                    <td>123</td>
+                                    <td>123</td>
+
+                                </tr>
                             @foreach ($tenant->user->familyMembers as $family)
                                 <tr>
                                     <td></td>
-                                    <td>{{ $family->name }} 123</td>
-                                    <td>{{ $family->status }} 123</td>
-                                    <td>{{ $family->birthdate }} 123</td>
-                                    <td>{{ $family->relationship }} 123</td>
+                                    <td>{{ $family->name }}</td>
+                                    <td>{{ $family->status }}</td>
+                                    <td>{{ $family->birthdate }}</td>
+                                    <td>{{ $family->relationship }}</td>
                                     <td class="flex gap-2 justify-center">
                                         <button
                                             onclick="document.getElementById('show_modal_{{ $family->id }}').showModal()"
