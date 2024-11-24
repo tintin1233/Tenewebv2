@@ -33,7 +33,13 @@
                         {{ $paymentAccount->name }}
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{ $paymentAccount->account_number }}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
 
@@ -47,9 +53,14 @@
                         @endif
 
                     </td>
+                    <td>
 
+                    </td>
                     <td>
                         {{ $paymentAccount->created_at->format('F d, Y h:s A') }}
+                    </td>
+                    <td>
+
                     </td>
 
                     <td class="flex gap-2 justify-center">
