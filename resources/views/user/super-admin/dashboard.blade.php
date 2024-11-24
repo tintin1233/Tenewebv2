@@ -2,7 +2,15 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <x-dashboard.super-admin.base>
-
+<style>
+    .bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity))) !important;
+}.bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s, oklch(var(--s) / var(--tw-bg-opacity))) !important;
+}
+</style>
     <div class="row">
         <div class="col-md-6 col-xs-12 col-sm-12">
         <x-card label="overall collections" :hasCurrency="true" :total="$totalSales" />
