@@ -1,18 +1,39 @@
 @php
     use App\Enums\GeneralStatus;
 @endphp
-
+<style>
+    .bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity))) !important;
+}.bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s, oklch(var(--s) / var(--tw-bg-opacity))) !important;
+}
+</style>
+<style>
+    @media (max-width: 768px) {
+        .text-2xl {
+            display: none;
+        }
+    }
+</style>
 <x-dashboard.admin.base>
-    <div class="grid grid-cols-3 grid-flow-row gap-2 h-32">
+    <div class="row">
+        <div class="col-md-4 col-xs-6 col-sm-6">
         <a href="#" class="h-full w-full">
             <x-card label="Units" icon="fi fi-rr-bed-alt" :total="$roomTotal" />
         </a>
+        </div>
+        <div class="col-md-4 col-xs-6 col-sm-6">
         <a href="#" class="h-full w-full">
             <x-card label="available Units" icon="fi fi-rr-bed-alt" :total="$vacantRoomTotal" />
         </a>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-12">
         <a href="#" class="h-full w-full">
             <x-card label="occupied Units" icon="fi fi-rr-bed-alt" :total="$occupiedRoomTotal" />
         </a>
+        </div>
     </div>
 
     <div class="panel p-2">
