@@ -1,40 +1,12 @@
 
-<style>
-  .swiper-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /* Optional: spacing between slides */
-}
-
-.swiper-slide {
-  width: 100%; /* Adjust based on your layout (e.g., 50% for two per row) */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh; /* Adjust based on the desired container height */
-  overflow: hidden; /* Prevents overflow for larger images */
-  background-color: #f8f8f8; /* Optional: background for short images */
-}
-
-.image-container img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain; /* Ensures the image is fully visible */
-}
-
-</style>
 <x-landing-page.base>
     <div class="h-full w-full flex justify-between">
         <div class="w-1/2">
             <div class="w-full h-[35rem] relative mb-10">
                 <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" style="
+  justify-content: center;
+  align-items: center;">
                         <div class="swiper-slide">
                             <img src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="" srcset="">
                         </div>
