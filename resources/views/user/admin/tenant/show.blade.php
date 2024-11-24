@@ -5,9 +5,9 @@
 
     <x-dashboard.page-label :back_url="route('admin.tenants.index')" title="Tenant" />
 
-    <div class="panel p-2">
-        <div class="flex gap-2">
-            <div class="w-1/5 flex  flex-col gap-2">
+    <div class="panel p-2" style="overflow-x:auto;">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12">
                 <img src="{{ $tenant->profile->image }}" alt="" srcset="" class="w-full h-64 object-cover">
                 <h1 class="text-center text-lg font-bold capitalize text-primary">
                     {{ "{$tenant->profile->last_name}, {$tenant->profile->first_name}" }}
@@ -16,7 +16,7 @@
                     {{ $tenant->email }}
                 </h1>
             </div>
-            <div class="w-5/6 min-h-32 bg-gray-50 rounded-lg p-2">
+            <div class="col-md-8 col-xs-12 col-sm-12">
                 <h1 class="text-xl font-bold text-primary capitalize">
                     Personal Information
                 </h1>

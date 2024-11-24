@@ -28,30 +28,39 @@
                     <td>
                         {{$unverifiedTenant->name}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->email}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->tenant_type}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->room_number}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->last_name}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->first_name}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->middle_name ?? "N\A"}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->contact ?? "N\A"}}
                     </td>
+                    <td></td>
                     <td>
                         {{$unverifiedTenant->tenement->name}}
                     </td>
+                    <td></td>
 
                     <td class="flex gap-2 justify-center">
                         <a href="{{route('admin.unverified-tenant.show', ['unverified_tenant' => $unverifiedTenant->id])}}"
