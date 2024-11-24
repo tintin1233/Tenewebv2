@@ -193,10 +193,7 @@
     .sidebar.collapsed .logoutname{
         display:none;
     }
-        .sidebar.collapsed .profile-link{
-
-        display:none;
-        }
+        
 
     .sidebar.collapsed .logo-img {
         width: 50px;
@@ -217,30 +214,29 @@
         <button id="burger-icon" class="burger-icon">
             <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
         </button>
-        <center>
-            
-        <img src="{{ asset('logo.png') }}" class="logo-img" />
-        <h1 class="logo-text">
-            Ciudad de Strike
-        </h1>
-    </center>
+
+        <div class="sidebar-logo">
+            <img src="{{ asset('logo.png') }}" class="logo-img" />
+            <h1 class="logo-text">
+                Ciudad de Strike
+            </h1>
+        </div>
     </div>
 
     <!-- Logo and Tenement Info -->
     <div class="sidebar-logo">
-        <h1 class="logo-text">
-            @if ($tenement)
-                <span>{{ $tenement->name }}</span>
-            @endif
-        </h1>
-
-        <a href="{{ route('tenant.profile.show') }}" class="profile-link" style="float:right;">
+        <a href="{{ route('tenant.profile.show') }}" class="profile-link" style="margin-right:1vh;">
             @if ($profile)
                 <img src="{{ $profile->image }}" class="profile-img" />
             @else
                 <i class="profile-icon"></i>
             @endif
         </a>
+        <h1 class="logo-text">
+            @if ($tenement)
+                <span>{{ $tenement->name }}</span>
+            @endif
+        </h1>
     </div>
 
     <!-- Sidebar Links -->
