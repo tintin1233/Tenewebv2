@@ -167,7 +167,7 @@
 
 .w-5\/6 {
      width: 100%; 
-    margin-left: 15vh;
+    margin-left:35vh;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
