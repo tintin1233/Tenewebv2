@@ -6,7 +6,7 @@
 
     <x-notification-message />
 
-    <div class="panel p-2">
+    <div class="panel p-2" style="overflow-x:auto;">
 
         <div class="flex items-center justify-between">
             <h1 class="text-2xl font-bold text-primary">Billing Records</h1>
