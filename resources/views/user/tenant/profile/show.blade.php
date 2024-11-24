@@ -80,7 +80,12 @@
                     </button>
                 </div>
 
-
+                <style>
+                    th{
+                        background-color:var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+                        color:orange;
+                    }
+                </style>
                 <div class="flex flex-col gap-2 mt-2">
                     <x-table-body :columns="['name', 'status', 'Date of Birth', 'Relationship with Head']" label="">
                         @foreach ($tenant->familyMembers as $family)
