@@ -3,6 +3,13 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<style>
+    .bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s, oklch(var(--s) / var(--tw-bg-opacity))) !important;
+    border-color:1px solid var(--fallback-s, oklch(var(--s) / var(--tw-bg-opacity))) !important;
+}
+</style>
     <div class="w-full h-64 rounded-lg bg-center bg-no-repeat bg-cover relative"
         style="background-image: url({{ $tenement->image }})">
         <div class="absolute z-10 backdrop-blur-sm flex w-full h-full justify-center items-center">
@@ -27,7 +34,7 @@ Bills"  :total="$totalMonthlyDuesBill" />
         <x-card icon="fi fi-rr-megaphone" label="Announcement" :total="$totalAnnouncement" />
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-md-4 col-xs-6 col-sm-12">
         <x-card icon="i fi-rr-file-invoice-dollar" label="Total Ammortilization" :hasCurrency="true" :total="$totalAmortization" />
