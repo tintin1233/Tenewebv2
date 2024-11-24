@@ -19,13 +19,13 @@
 
 @endphp
 
-<div class="w-1/5 h-screen flex flex-col bg-white border border-secondary">
-    <div class="flex items-center border-b border-secondary p-2 justify-between">
+<div class="">
+    <div class="">
         <div class="flex items-center gap-2">
             <img src="{{ asset('logo.png') }}" class="h-12 w-12 rounded-full" />
 
             <h1 class="font-bold text-lg text-neutral capitalize">
-                ciudad de strike 123
+                ciudad de strike
 
 
                 @if ($tenement)
