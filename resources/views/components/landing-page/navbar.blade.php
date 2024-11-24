@@ -5,7 +5,7 @@
                 <img src="{{ asset('logo.png') }}" class="h-12 w-12 rounded-full" />
             </a>
             <a href="#">
-                <h1 class="font-bold text-3xl text-neutral">
+                <h1 class="font-bold text-3xl text-neutral" style="font-size:2vh;">
                     Ciudad De Strike
                 </h1>
             </a>
