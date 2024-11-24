@@ -4,11 +4,17 @@
     height: 85vh !important;
     width:100% !important;
 }
-  /* Mobile view adjustments */
+
+.swiper-wrapper {
+    height: 100%; 
+}
   @media (max-width: 768px) {
     .imageclass {
       height: auto !important; /* Automatically adjust height for mobile */
       max-height: 30vh; /* Restrict max height for mobile view */
+    }
+    .swiper-wrapper {
+        height: 30vh !important; 
     }
   }
 
@@ -16,6 +22,9 @@
   @media (max-width: 480px) {
     .imageclass {
       max-height: 30vh; /* Further reduce height on smaller screens */
+    }
+    .swiper-wrapper {
+        height: 30vh !important; 
     }
   }
 </style>
