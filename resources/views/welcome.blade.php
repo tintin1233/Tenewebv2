@@ -1,3 +1,34 @@
+
+<style>
+  .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Optional: spacing between slides */
+}
+
+.swiper-slide {
+  width: 100%; /* Adjust based on your layout (e.g., 50% for two per row) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust based on the desired container height */
+  overflow: hidden; /* Prevents overflow for larger images */
+  background-color: #f8f8f8; /* Optional: background for short images */
+}
+
+.image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; /* Ensures the image is fully visible */
+}
+
+</style>
 <x-landing-page.base>
     <div class="h-full w-full flex justify-between">
         <div class="w-1/2">
@@ -48,7 +79,7 @@
 <section class="text-gray-600 body-font">
   <div class="container px-4 py-12 mx-auto">
     <div class="flex flex-col text-center w-full mb-8">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Unit</h1>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="font-size:2.5vh; font-weight:bold;">Units Preview</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">View</p>
     </div>
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
