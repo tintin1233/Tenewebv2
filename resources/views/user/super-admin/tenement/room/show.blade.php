@@ -54,13 +54,13 @@
         @endphp
 
         @if ($tenant)
-            <div class="bg-gray-100 rouded-lg flex gap-2 h-auto w-full p-2">
-                <div class="w-1/5  flex flex-col  gap-2">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 col-sm-12">
                     <img src="{{ $tenant->user->profile->image }}" class="w-full h-auto object-cover object-center" />
                 </div>
 
 
-                <div class="w-5/6 min-h-32 bg-gray-50 rounded-lg p-2">
+                <div class="col-md-8 col-xs-12 col-sm-12">
                     <h1 class="text-xl font-bold text-primary capitalize">
                         Personal Information
                     </h1>
