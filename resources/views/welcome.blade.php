@@ -12,6 +12,8 @@
 
       <div class="row">
         <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="w-1/2">
+            <div class="w-full h-[35rem] relative mb-10">
                 <div class="swiper mySwiper" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -39,6 +41,8 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
       </div>
 
