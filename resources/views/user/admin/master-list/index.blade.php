@@ -13,7 +13,8 @@
         font-size:1vh !important;
     }
 }
-</style><x-dashboard.admin.base>
+</style>
+<x-dashboard.admin.base>
 
 
     <x-notification-message />
