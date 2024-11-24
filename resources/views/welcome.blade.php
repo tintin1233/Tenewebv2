@@ -42,11 +42,12 @@
 
         <div class="grow flex flex-col justify-center items-center">
             <div class="w-5/6 flex flex-col gap-2">
-                <h1 class="font-bold text-4xl capitalize" style="font-size:4.5vh; font-weight:bold;">Welcome to CIUDAD De Strike HOAI</h1>
-                <p class="whitespace-pre-line text-xs" style="font-size:2.5vh;">CIUDAD De Strike is a community that values safety, quality of
-                    life, and trust.
-                    Our neighborhood is designed to provide a comfortable and safe place for you and
-                    your family to live, work, and play.</p>
+                <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
+                <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
+                <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:2vh;">
+                  CIUDAD De Strike is a community that values safety, quality of life, and trust. 
+                  Our neighborhood is designed to provide a comfortable and safe place for you and
+                  your family to live, work, and play.</p>
                 <a href="{{ route('pre.register.create') }}" class="btn btn-accent" style="font-size:2.5vh;">Register</a>
             </div>
         </div>
