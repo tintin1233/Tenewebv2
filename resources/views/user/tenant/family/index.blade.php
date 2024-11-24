@@ -1,6 +1,14 @@
 <x-dashboard.tenant.base>
 
 
+<style>
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-3xl{
+        font-size:2vh !important;
+    }
+}
+</style>
     <x-notification-message />
 
     <x-dashboard.page-label :back_url="route('tenant.dashboard')" title="Family Composition" />
