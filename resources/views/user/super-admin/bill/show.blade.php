@@ -2,7 +2,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .text-3xl{
-        font-size:2vh;
+        font-size:2vh !important;
     }
 }
 </style>
