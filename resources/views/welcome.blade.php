@@ -1,12 +1,9 @@
-
 <x-landing-page.base>
     <div class="h-full w-full flex justify-between">
         <div class="w-1/2">
             <div class="w-full h-[35rem] relative mb-10">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper" style="
-  justify-content: center;
-  align-items: center;">
+                <div class="swiper mySwiper" >
+                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="" srcset="">
                         </div>
