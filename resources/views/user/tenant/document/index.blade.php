@@ -2,6 +2,20 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<style>
+    .checker{
+        font-size:2vh;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .checker{
+        font-size:1.5vh;
+        margin-left:-1vh;
+    }
+}
+</style>
     <div class="panel p-2 border-none shadow-none bg-none">
         <x-dashboard.page-label :title="__('Documents')" />
 
