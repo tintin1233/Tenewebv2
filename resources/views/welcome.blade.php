@@ -12,6 +12,11 @@
 .welcomingtest{
   height:80vh;
 }
+
+.texterc{
+font-size:5.5vh; font-weight:bold;
+}
+
   @media (max-width: 768px) {
     .imageclass {
       height: auto !important; /* Automatically adjust height for mobile */
@@ -20,8 +25,12 @@
     .swiper-wrapper {
         height: 30vh !important; 
     }
+}
 .welcomingtest{
   height:50vh !important;
+}
+.texterc{
+font-size:4vh; font-weight:bold;
 }
   }
 
@@ -35,6 +44,9 @@
     }
 .welcomingtest{
   height:50vh !important;
+}
+.texterc{
+font-size:4vh; font-weight:bold;
 }
   }
 </style>
@@ -75,7 +87,7 @@
             <div class="col-md-6 col-xs-12 col-sm-12 d-flex justify-content-center align-items-center welcomingtest">
                 <div class="text-center" style="width: 100%; text-align: center;">
                     <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold; T">Welcome To</h1>
-                    <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
+                    <h1 class="font-bold text-4xl capitalize texterc">CIUDAD De Strike HOAI</h1>
                     <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh; text-align: left;">
                         CIUDAD De Strike is a community that values safety, quality of life, and trust. 
                         Our neighborhood is designed to provide a comfortable and safe place for you and
