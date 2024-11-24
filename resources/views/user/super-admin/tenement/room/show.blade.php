@@ -595,24 +595,6 @@
 
     <x-table-body :columns="['name', 'room number', 'Move Out Date']" label="Previous Tenants">
 
-            <tr>
-                <td>
-
-                </td>
-                <td>
-                    1
-                </td>
-                <td>
-                   2
-                </td>
-                <td>
-                   3
-                </td>
-
-                <td class="flex gap-2 justify-center">
-
-                </td>
-            </tr>
         @forelse ($room->tenants()->whereNotNull('move_out_date')->get() as $tenant)
             <tr>
                 <td>
@@ -622,10 +604,19 @@
                     {{ $tenant->name }}
                 </td>
                 <td>
+
+                </td>
+                <td>
                     {{ $tenant->tenant->room->room_number }}
                 </td>
                 <td>
+
+                </td>
+                <td>
                     {{ date('F d, Y', strtotime($tenant->tenant->move_out_date)) }}
+                </td>
+                <td>
+
                 </td>
 
                 <td class="flex gap-2 justify-center">
