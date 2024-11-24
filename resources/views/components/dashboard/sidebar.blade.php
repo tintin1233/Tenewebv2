@@ -186,7 +186,7 @@
         display: block; /* Show burger icon on mobile */
     }
 
-    .sidebar.collapsed .sidebar-link {
+    .sidebar.collapsed .link-name {
         display: none; /* Hide sidebar links in collapsed state */
     }
 
