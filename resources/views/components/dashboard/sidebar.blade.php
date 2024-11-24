@@ -83,7 +83,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
 }
 
 .logo-img {
