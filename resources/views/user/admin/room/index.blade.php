@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="panel p-2">
+    <div class="panel p-2" style="overflow-x:auto;">
         <x-table-body useLabelWithOptions="true" labelOptionsName="UNITS" :options="[
             [
                 'url' => route('admin.rooms.index', ['search' => GeneralStatus::VACANT->value]),
