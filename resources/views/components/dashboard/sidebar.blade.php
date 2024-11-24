@@ -19,17 +19,42 @@
 
 @endphp
 <style>
-    /* Optional: Custom Transition for Sidebar */
+/* Smooth transition for width */
 #sidebar {
-    transition: width 0.3s ease-in-out  !important;
+    transition: width 0.3s ease-in-out;
 }
 
+/* Add custom transition for hidden/visible content */
 #sidebar-content {
-    transition: opacity 0.3s ease-in-out !important;
+    transition: opacity 0.3s ease-in-out;
 }
 
-#sidebar.hidden {
-    display: none  !important;
+#sidebar.collapsed {
+    width: 5rem; /* Width when collapsed (could be a small value, e.g., 5rem) */
+}
+
+#sidebar.expanded {
+    width: 20rem; /* Expanded width for the sidebar */
+}
+
+#sidebar-content.collapsed {
+    display: none; /* Hide content when collapsed */
+}
+
+/* For smoother UI */
+#sidebar-content {
+    opacity: 1;
+}
+
+/* Optional: When burger is clicked, expand to full width */
+@media (min-width: 768px) {
+    #sidebar {
+        width: 20rem; /* Default expanded width on larger screens */
+    }
+
+    #sidebar-content {
+        display: block; /* Ensure content is always visible */
+    }
 }
 
 </style>
@@ -71,14 +96,13 @@
     </div>
 
     <div class="p-4 mt-5 flex flex-col gap-5 justify-between h-full overflow-y-auto" id="sidebar-content">
-        <div class="h-auto w-full  flex flex-col gap-5">
+        <div class="h-auto w-full flex flex-col gap-5">
             @foreach ($links as $link)
                 <a href="{{ $link['url'] ? route($link['url']) : '#' }}"
                     class="flex items-center w-full text-sm gap-2 p-2 rounded-lg
-            {{ Route::is($link['url'])
-                ? 'bg-secondary font-bold text-accent'
-                : 'hover:bg-secondary hover:font-bold duration-700 hover:text-accent' }}
-            ">
+                    {{ Route::is($link['url'])
+                        ? 'bg-secondary font-bold text-accent'
+                        : 'hover:bg-secondary hover:font-bold duration-700 hover:text-accent' }}">
                     {!! $link['icon'] !!}
                     <span class="capitalize">
                         {{ $link['name'] }}
@@ -86,8 +110,7 @@
 
                     @if ($link['badgeTotal'] !== 0)
                         <div class="grow flex justify-end">
-                            <span
-                                class="text-white flex items-center justify-center w-5 aspect-square rounded-full bg-error">
+                            <span class="text-white flex items-center justify-center w-5 aspect-square rounded-full bg-error">
                                 {{ $link['badgeTotal'] }}
                             </span>
                         </div>
@@ -114,8 +137,8 @@
 
     // Toggle sidebar visibility
     burgerIcon.addEventListener("click", () => {
-        sidebarContent.classList.toggle("hidden");
-        sidebar.classList.toggle("w-1/5"); // Toggle width for mobile view
-        sidebar.classList.toggle("w-4/5"); // Adjust width for expanded state
+        sidebar.classList.toggle("collapsed");
+        sidebar.classList.toggle("expanded");
+        sidebarContent.classList.toggle("collapsed");
     });
 </script>
