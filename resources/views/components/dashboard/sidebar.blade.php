@@ -251,7 +251,7 @@
     <div class="sidebar-logout">
         <form method="POST" action="{{ route('logout') }}" class="logout-form">
             @csrf
-            <i class="logout-icon"></i>
+            <i class="fa fa-sign-out"></i>
             <button class="logout-btn">Logout</button>
         </form>
     </div>
