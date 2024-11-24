@@ -8,12 +8,8 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
 <x-landing-page.base>
-    <div class="h-full w-full flex justify-between">
-
       <div class="row">
         <div class="col-md-6 col-xs-12 col-sm-12">
-        <div class="w-1/2">
-            <div class="w-full h-[35rem] relative mb-10">
                 <div class="swiper mySwiper" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -42,13 +38,9 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </div>
       </div>
 
         <div class="col-md-6 col-xs-12 col-sm-12">
-        <div class="grow flex flex-col justify-center items-center">
-            <div class="w-5/6 flex flex-col gap-2">
                 <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
                 <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
                 <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh;">
@@ -58,9 +50,7 @@
                   <br>
                 <a href="{{ route('pre.register.create') }}" class="btn btn-accent" style="font-size:2.5vh;">Register</a>
             </div>
-        </div>
-      </div>
-    </div>
+      
     </div>
 
 <section class="text-gray-600 body-font">
