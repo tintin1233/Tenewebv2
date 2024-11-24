@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="flex flex-col gap-2">
                                     <h1 class="input-generic-label">Address</h1>
-                                    <input type="text" name=address" class="input-generic">
+                                    <input type="text" name="address" class="input-generic">
                                     <x-dashboard.input-error :errors="$errors" name="middle_name"  />
 
                                 </div>

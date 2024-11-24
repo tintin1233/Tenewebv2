@@ -16,7 +16,7 @@
 
                     </td>
                     <td>
-                        {{ $masterList->last_name }}
+                        {{ $masterList->contact_no }} 
                     </td>
                     <td>
                         {{ $masterList->first_name }}
