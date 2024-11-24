@@ -67,15 +67,19 @@
                                 <td>
                                 {{ $bill->created_at->format('F') }}
                                 </td>
+                                <td></td>
                                 <td>
                                     {{ $bill->amount }}
                                 </td>
+                                <td></td>
                                 <td class="capitalize">
                                     {{ $bill->type }}
                                 </td>
+                                <td></td>
                                 <td class="capitalize">
                                     {{ $bill->status }}
                                 </td>
+                                <td></td>
                                 <td class="flex gap-2 justify-center">
                                     <button onclick="bill_modal_{{ $bill->id }}.showModal()"
                                         class="btn btn-accent btn-sm text-primary">
