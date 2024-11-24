@@ -1,3 +1,7 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <x-dashboard.tenant.base>
 
 
@@ -7,8 +11,8 @@
 
 
     <div class="panel p-2">
-        <div class="flex gap-2">
-            <div class="w-1/5 flex  flex-col gap-2">
+        <div class="row">
+            <div class="col-md-3 col-xs-12 col-sm-12">
                 <img src="{{ $tenant->profile->image }}" alt="" srcset="" class="w-full h-64 object-cover">
                 <h1 class="text-center text-lg font-bold capitalize text-primary">
                     {{ "{$tenant->profile->last_name}, {$tenant->profile->first_name}" }}
@@ -17,7 +21,7 @@
                     {{ $tenant->email }}
                 </h1>
             </div>
-            <div class="w-5/6 min-h-32 bg-gray-50 rounded-lg p-2">
+            <div class="col-md-9 col-xs-12 col-sm-12">
                 <div class="flex justify-between">
                     <h1 class="text-xl font-bold text-primary capitalize">
                         Personal Information
