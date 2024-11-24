@@ -1,3 +1,11 @@
+<style>
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-3xl{
+        font-size:2vh;
+    }
+}
+</style>
 <x-dashboard.super-admin.base>
     <x-dashboard.page-label title="bill" :back_url="route('super-admin.bills.index')" />
     <div class="panel p-2  flex  flex-col  gap-2">
