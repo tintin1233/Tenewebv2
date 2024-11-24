@@ -16,9 +16,11 @@
                     <td>
                         {{ $bill->created_at->format('F') }}
                     </td>
+                    <td></td>
                     <td>
                         ₱ {{ number_format($bill->amount, 2) }}
                     </td>
+                    <td></td>
                     {{-- <td>
                         {{ $bill->tenant->user->name }}
                     </td> --}}
@@ -28,13 +30,16 @@
                     <td class="capitalize">
                         {{ $bill->status }}
                     </td>
+                    <td></td>
                     <td>
                         {{ date('F d, Y', strtotime($bill->due_date)) }}
                     </td>
+                    <td></td>
                     <td>
                         {{ $bill->created_at->format('F d, Y h:s A') }}
                     </td>
 
+                    <td></td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{ route('tenant.bills.show', ['bill' => $bill->id]) }}"
                             class="btn btn-accent btn-sm text-primary">
