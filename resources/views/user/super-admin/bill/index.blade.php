@@ -33,29 +33,56 @@
                             {{ $bill->created_at->format('F') }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             ₱ {{ number_format($bill->amount) }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             {{  $bill->tenant->user->profile->last_name }},
                             {{ $bill->tenant->user->profile->first_name }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ $bill->tenant->room->room_number }}
+                        </td>
+                        <td>
+
                         </td>
                         <td class="capitalize">
                             {{ $bill->type }}
+                        </td>
+                        <td>
+
                         </td>
                         <td class="capitalize">
                             {{ $bill->status }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ date('F d, Y', strtotime($bill->due_date)) }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             {{ $bill->created_by }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ $bill->created_at->format('F d, Y h:s A') }}
+                        </td>
+                        <td>
+
                         </td>
 
                         <td class="flex gap-2 justify-center">
