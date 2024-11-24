@@ -1,9 +1,23 @@
 <style>
+    .btn-sm {
+    height: 2rem;
+    min-height: 2rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+}
     /* Hide the content on mobile screens */
 @media (max-width: 640px) {
     .hide-on-mobile {
         display: none;
     }
+    .btn-sm {
+    height: 2rem;
+    min-height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: .875rem;
+}
 }
 </style>
 <div class="w-full flex justify-center bg-white p-2 sticky top-0 z-50">
