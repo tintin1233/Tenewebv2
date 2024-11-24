@@ -12,18 +12,17 @@
         </a>
     </div>
 
+
 <style>
     @media (max-width: 768px) {
-        .hide-on-mobile {
+        .text-2xl {
             display: none;
         }
     }
 </style>
     <div class="panel p-2">
-       <x-table-body :columns="['Name', 'Bldg No. & Unit No.', 'Account Created']" 
-    :search_url="route('admin.tenants.index')" 
-    label="Tenants" 
-    class="hide-on-mobile">
+        <x-table-body :columns="['Name', 'Bldg No. & Unit No.', 'Account Created']" :search_url="route('admin.tenants.index')" label="Tenants" >
+
             @forelse ($tenants as $tenant)
                 <tr>
                     <td>
