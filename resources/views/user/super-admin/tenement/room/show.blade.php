@@ -382,33 +382,6 @@
                 'Created By',
                 'Date & Time',
             ]" label="">
-
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td>8
-                        </td>
-                        <td>7
-                        </td>
-                        <td> 8</td>
-                        <td>7
-                        </td>
-                        <td class="capitalize">6
-                        </td>
-                        <td>5
-                        </td>
-                        <td>4
-                        </td>
-                        <td>3
-                        </td>
-                        <td>2
-                        </td>
-
-                        <td class="flex gap-2 justify-center">
-                        1
-                        </td>
-                    </tr>
                 @forelse ($bills as $bill)
                     <tr>
                         <td>
@@ -622,6 +595,24 @@
 
     <x-table-body :columns="['name', 'room number', 'Move Out Date']" label="Previous Tenants">
 
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    1
+                </td>
+                <td>
+                   2
+                </td>
+                <td>
+                   3
+                </td>
+
+                <td class="flex gap-2 justify-center">
+
+                </td>
+            </tr>
         @forelse ($room->tenants()->whereNotNull('move_out_date')->get() as $tenant)
             <tr>
                 <td>
