@@ -55,7 +55,7 @@
 <section class="text-gray-600 body-font">
   <div class="container px-4 py-12 mx-auto">
     <div class="flex flex-col text-center w-full mb-8">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="font-size:2.5vh; font-weight:bold;">Units Preview</h1>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" style="font-size:3.5vh; font-weight:bold; margin-top:-2vh;">Units Preview</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">View</p>
     </div>
     <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
