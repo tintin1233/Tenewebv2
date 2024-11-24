@@ -166,7 +166,7 @@
 }
 
 .w-5\/6 {
-     width: 83.333333%; 
+     width: 100%; 
     margin-left: 15vh;
 }
 /* Responsive Design */
