@@ -10,8 +10,11 @@
                     <td></td>
                     <td class="capitalize">1
                     </td>
+                    <td></td>
                     <td>2
                     </td>
+                    <td></td>
+                    <td></td>
                     <td class="flex gap-2 justify-center">3
                     </td>
                 </tr>
