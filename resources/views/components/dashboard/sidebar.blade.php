@@ -215,7 +215,7 @@
             <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
         </button>
 
-        <div class="sidebar-logo">
+        <div class="sidebar-logo" style="border-bottom:none; padding:0;">
             <img src="{{ asset('logo.png') }}" class="logo-img" />
             <h1 class="logo-text">
                 Ciudad de Strike
