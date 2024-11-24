@@ -6,7 +6,7 @@
             'Date and Time Posted',
         ]" >
 
-                <tr class="{{!$announcement->viewedByAuthUser($announcement->id) ? 'font-bold' : ''}}">
+                <tr>
                     <td></td>
                     <td class="capitalize">1
                     </td>
