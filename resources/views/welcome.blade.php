@@ -1,3 +1,10 @@
+<style>
+  img, video {
+    max-width: 100%;
+    height: 75vh;
+    width:100%;
+}
+</style>
 <x-landing-page.base>
     <div class="h-full w-full flex justify-between">
         <div class="w-1/2">
@@ -122,7 +129,7 @@
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!--
+
 <script>
   var swiper = new Swiper('.mySwiper', {
     navigation: {
@@ -136,20 +143,6 @@
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
-    },
-  });
-</script>
--->
-
-<script>
-  var swiper = new Swiper('.mySwiper', {
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
     },
   });
 </script>
