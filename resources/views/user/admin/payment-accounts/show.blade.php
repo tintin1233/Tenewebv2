@@ -1,8 +1,16 @@
+
+<style>
+    @media (max-width: 768px) {
+        .text-3xl {
+            font-size:2vh !important;
+        }
+    }
+</style>
 <x-dashboard.admin.base>
     <x-dashboard.page-label :back_url="route('admin.payment-accounts.index')" title="Payment Account" />
 
     <div class="flex flex-col gap-2 mt-10 items-center">
-        <div class="w-1/2 bg-white rounded-lg shadow-lg p-5">
+        <div class="w-3/2 bg-white rounded-lg shadow-lg p-5">
             <div class="flex justify-center w-full">
                 <h1 class="flex items-center text-lg font-bold gap-2 w-5/6"> <span>
                         <img src="{{ asset('logo.png') }}" alt="" class="w-20 aspect-square rounded-full"></span>
