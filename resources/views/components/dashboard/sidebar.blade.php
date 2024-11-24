@@ -217,13 +217,17 @@
         <button id="burger-icon" class="burger-icon">
             <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
         </button>
-        
+        <center>
+            
+        <img src="{{ asset('logo.png') }}" class="logo-img" />
+        <h1 class="logo-text">
             Ciudad de Strike
+        </h1>
+    </center>
     </div>
 
     <!-- Logo and Tenement Info -->
     <div class="sidebar-logo">
-        <img src="{{ asset('logo.png') }}" class="logo-img" />
         <h1 class="logo-text">
             @if ($tenement)
                 <span>{{ $tenement->name }}</span>
