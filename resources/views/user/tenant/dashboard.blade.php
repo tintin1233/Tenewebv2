@@ -26,6 +26,9 @@ Bills"  :total="$totalMonthlyDuesBill" />
         <div class="col-md-4 col-xs-6 col-sm-12">
         <x-card icon="fi fi-rr-megaphone" label="Announcement" :total="$totalAnnouncement" />
         </div>
+    </div>
+    
+    <div class="row">
         <div class="col-md-4 col-xs-6 col-sm-12">
         <x-card icon="i fi-rr-file-invoice-dollar" label="Total Ammortilization" :hasCurrency="true" :total="$totalAmortization" />
         </div>
