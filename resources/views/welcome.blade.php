@@ -6,52 +6,56 @@
 }
 </style>
 <x-landing-page.base>
-    <div class="h-full w-full flex justify-between">
-        <div class="w-1/2">
-            <div class="w-full h-[35rem] relative mb-10">
-                <div class="swiper mySwiper" >
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/2.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/3.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/4.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/5.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/6.jpg')}}" alt="" srcset="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="imageclass" src="{{asset('images/7.jpg')}}" alt="" srcset="">
-                        </div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="grow flex flex-col justify-center items-center">
-            <div class="w-5/6 flex flex-col gap-2">
-                <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
-                <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
-                <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:2vh;">
-                  CIUDAD De Strike is a community that values safety, quality of life, and trust. 
-                  Our neighborhood is designed to provide a comfortable and safe place for you and
-                  your family to live, work, and play.</p>
-                <a href="{{ route('pre.register.create') }}" class="btn btn-accent" style="font-size:2.5vh;">Register</a>
-            </div>
-        </div>
+<div class="h-full w-full flex flex-col lg:flex-row justify-between">
+  <!-- Welcoming Statements -->
+  <div class="grow flex flex-col justify-center items-center order-2 lg:order-1">
+    <div class="w-5/6 flex flex-col gap-2">
+      <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
+      <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
+      <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh;">
+        CIUDAD De Strike is a community that values safety, quality of life, and trust. 
+        Our neighborhood is designed to provide a comfortable and safe place for you and
+        your family to live, work, and play.
+      </p>
+      <br>
+      <a href="{{ route('pre.register.create') }}" class="btn btn-accent" style="font-size:2.5vh;">Register</a>
     </div>
+  </div>
+
+  <!-- Sliding Images -->
+  <div class="w-full lg:w-1/2 order-1 lg:order-2">
+    <div class="w-full h-[35rem] relative mb-10">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/2.jpg')}}" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/3.jpg')}}" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/4.jpg')}}" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/5.jpg')}}" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/6.jpg')}}" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img class="imageclass" src="{{asset('images/7.jpg')}}" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="text-gray-600 body-font">
   <div class="container px-4 py-12 mx-auto">
