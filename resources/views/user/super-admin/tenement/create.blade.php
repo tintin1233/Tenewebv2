@@ -1,3 +1,8 @@
+<style>
+    .text-3xl {
+        font-size:2vh;
+    }
+</style>
 <x-dashboard.super-admin.base>
     <x-dashboard.page-label :back_url="route('super-admin.tenements.index')" title="Tenenement Create" />
 

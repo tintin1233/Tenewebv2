@@ -12,13 +12,13 @@
 }
 </style>
     <div class="row">
-        <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="col-md-4 col-xs-12 col-sm-12">
         <x-card label="overall collections" :hasCurrency="true" :total="$totalSales" />
         </div>
-        <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="col-md-4 col-xs-12 col-sm-12">
         <x-card label="tenants" icon="fi fi-rr-house-chimney-user" :total="$tenantTotal" />
         </div>
-        <div class="col-md-6 col-xs-12 col-sm-12">
+        <div class="col-md-4 col-xs-12 col-sm-12">
         <x-card label="tenements" icon="fi fi-rr-house-building" :total="$tenementTotal" />
         </div>
     </div>
