@@ -10,7 +10,7 @@
 }
 
 .welcomingtest{
-  height:100vh;
+  height:90vh;
 }
   @media (max-width: 768px) {
     .imageclass {
