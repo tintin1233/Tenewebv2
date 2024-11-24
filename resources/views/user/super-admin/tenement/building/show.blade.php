@@ -39,6 +39,8 @@
                     <td>
                         {{ $room->room_number }}
                     </td>
+                    <td>
+                    </td>
                     <td class="capitalize">
                         {{ $room->status }}
                     </td>
