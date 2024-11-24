@@ -25,7 +25,7 @@
             <img src="{{ asset('logo.png') }}" class="h-12 w-12 rounded-full" />
 
             <h1 class="font-bold text-lg text-neutral capitalize">
-                ciudad de strike
+                ciudad de strike 123
 
 
                 @if ($tenement)
