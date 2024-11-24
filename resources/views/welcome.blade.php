@@ -1,8 +1,8 @@
 <style>
   img, video {
     max-width: 100%;
-    height: 75vh;
-    width:100%;
+    height: 75vh !important;
+    width:100% !important;
 }
 </style>
 <x-landing-page.base>
