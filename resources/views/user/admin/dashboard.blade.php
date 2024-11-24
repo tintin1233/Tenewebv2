@@ -7,6 +7,9 @@
     .bg-primary {
     --tw-bg-opacity: 1;
     background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity))) !important;
+}.bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s, oklch(var(--s) / var(--tw-bg-opacity))) !important;
 }
 </style>
 <x-dashboard.admin.base>

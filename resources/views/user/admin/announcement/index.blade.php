@@ -1,5 +1,5 @@
 <x-dashboard.admin.base>
-
+123
     <div class="panel p-2">
         <x-table-body label="Announcements" :columns="['Title', 'Date & Time Posted', 'Created By']" :create_url="route('admin.announcements.create')">
             @forelse ($announcements as $announcement)
