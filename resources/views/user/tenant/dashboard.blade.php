@@ -2,7 +2,7 @@
 
 
     <div class="w-full h-64 rounded-lg bg-center bg-no-repeat bg-cover relative"
-        style="background-image: url({{ $tenement->image }});">
+        style="background-image: url({{ $tenement->image }})">
         <div class="absolute z-10 backdrop-blur-sm flex w-full h-full justify-center items-center">
             <div class="flex  flex-col gap-2">
                 <h1 class="text-2xl font-bold text-primary text-center">{{ $tenement->name }}</h1>

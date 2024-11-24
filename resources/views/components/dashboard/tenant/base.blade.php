@@ -60,7 +60,7 @@
     <x-dashboard.content-wrapper>
         <div class="flex gap-5 w-full">
             <x-dashboard.sidebar :links="$links" />
-            <div class="w-5/6 h-full flex flex-col gap-2" style="margin-left:30vh !important;">
+            <div class="w-5/6 h-full flex flex-col gap-2">
                 <x-dashboard.header />
                 <div class="p-2 h-auto w-full flex flex-col gap-2">
                     {{ $slot }}
