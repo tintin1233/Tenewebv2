@@ -5,7 +5,7 @@
         style="background-image: url({{ $tenement->image }})">
         <div class="absolute z-10 backdrop-blur-sm flex w-full h-full justify-center items-center">
             <div class="flex  flex-col gap-2">
-                <h1 class="text-2xl font-bold text-primary text-center">{{ $tenement->name }}</h1>
+                <h1 class="text-2xl font-bold text-primary text-center">{{ $tenement->name }} 123</h1>
                 <p class="text-lg text-center">{{ $room->room_number }}</p>
             </div>
 
@@ -34,7 +34,7 @@ Bills"  :total="$totalMonthlyDuesBill" />
                 <div class="flex flex-col gap-2 bg-white rounded-lg shadow-md p-2 justify-between w-full h-auto">
                     <div class="flex justify-between items-center">
                         <h1 class="text-xl font-bold text-primary capitalize">
-                            {{ $announcement->title }} 123
+                            {{ $announcement->title }}
                         </h1>
                         <p class="text-xs text-gray-500">
                             {{ date('F d, Y h:s A', strtotime($announcement->created_at)) }}
