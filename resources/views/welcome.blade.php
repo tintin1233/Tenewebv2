@@ -1,7 +1,7 @@
 <style>
   .imageclass {
     max-width: 100%;
-    height: 75vh !important;
+    height: 85vh !important;
     width:100% !important;
 }
 </style>
