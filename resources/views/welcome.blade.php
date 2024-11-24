@@ -4,6 +4,20 @@
     height: 85vh !important;
     width:100% !important;
 }
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .imageclass {
+      height: auto !important; /* Automatically adjust height for mobile */
+      max-height: 30vh; /* Restrict max height for mobile view */
+    }
+  }
+
+  /* Additional adjustments for very small screens, if needed */
+  @media (max-width: 480px) {
+    .imageclass {
+      max-height: 30vh; /* Further reduce height on smaller screens */
+    }
+  }
 </style>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
@@ -40,7 +54,7 @@
                 </div>
       </div>
 
-        <div class="col-md-6 col-xs-12 col-sm-12">
+            <div class="col-md-6 col-xs-12 col-sm-12" style="justify-content: center;">
                 <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
                 <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
                 <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh;">
