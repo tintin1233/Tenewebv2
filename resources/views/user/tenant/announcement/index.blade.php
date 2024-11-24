@@ -6,27 +6,17 @@
             'Date and Time Posted',
         ]" >
 
-                <tr>
-                    <td></td>
-                    <td class="capitalize">1
-                    </td>
-                    <td></td>
-                    <td>2
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td class="flex gap-2 justify-center">3
-                    </td>
-                </tr>
             @forelse ($announcements as $announcement)
                 <tr class="{{!$announcement->viewedByAuthUser($announcement->id) ? 'font-bold' : ''}}">
                     <td></td>
                     <td class="capitalize">
                         {{ $announcement->title}}
                     </td>
+                    <td></td>
                     <td>
                         {{$announcement->created_at->format('F d, Y h:s A')}}
                     </td>
+                    <td></td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{route('tenant.announcements.show', ['announcement' => $announcement->id])}}" class="btn btn-accent btn-sm text-primary">
                             View
