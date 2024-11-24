@@ -17,7 +17,7 @@
 
     </div>
 
-    <div class="panel p-2">
+    <div class="panel p-2" style="overflow-x:auto;">
         <x-table-body label="Units" :columns="['Unit no.', 'Status', 'Tenement']" :search_url="route('super-admin.buildings.show', ['building' => $building->id])">
 
 
