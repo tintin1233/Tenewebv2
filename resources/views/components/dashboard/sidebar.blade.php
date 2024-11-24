@@ -190,6 +190,9 @@
     .sidebar.collapsed .link-name {
         display: none; /* Hide sidebar links in collapsed state */
     }
+    .sidebar.collapsed .logoutname{
+        display:none;
+    }
 
     .sidebar.collapsed .logo-img {
         width: 40px;
@@ -252,8 +255,7 @@
     <div class="sidebar-logout">
         <form method="POST" action="{{ route('logout') }}" class="logout-form">
             @csrf
-            <i class="fa fa-sign-out"></i>
-            <button class="logout-btn">Logout</button>
+            <button class="logout-btn"><i class="fa fa-sign-out"></i> <span class="logoutname">Logout</span></button>
         </form>
     </div>
 </div>
