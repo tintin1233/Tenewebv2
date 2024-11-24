@@ -110,10 +110,10 @@
                             @foreach ($tenant->user->familyMembers as $family)
                                 <tr>
                                     <td></td>
-                                    <td>{{ $family->name }}</td>
-                                    <td>{{ $family->status }}</td>
-                                    <td>{{ $family->birthdate }}</td>
-                                    <td>{{ $family->relationship }}</td>
+                                    <td>{{ $family->name }} 123</td>
+                                    <td>{{ $family->status }} 123</td>
+                                    <td>{{ $family->birthdate }} 123</td>
+                                    <td>{{ $family->relationship }} 123</td>
                                     <td class="flex gap-2 justify-center">
                                         <button
                                             onclick="document.getElementById('show_modal_{{ $family->id }}').showModal()"
@@ -130,19 +130,19 @@
                                                 <h3 class="text-lg font-bold">Family Member - {{ $family->name }}</h3>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Name</h1>
-                                                    <p>{{ $family->name }} 123</p>
+                                                    <p>{{ $family->name }}</p>
                                                 </div>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Status</h1>
-                                                    <p>{{ $family->status }} 123</p>
+                                                    <p>{{ $family->status }}</p>
                                                 </div>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Date of Birth</h1>
-                                                    <p>{{ $family->birthdate }} 123</p>
+                                                    <p>{{ $family->birthdate }}</p>
                                                 </div>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Relationship with Head</h1>
-                                                    <p>{{ $family->relationship }} 123</p>
+                                                    <p>{{ $family->relationship }}</p>
                                                 </div>
                                             </div>
                                         </dialog>
