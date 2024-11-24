@@ -8,6 +8,10 @@
 .swiper-wrapper {
     height: 100%; 
 }
+
+.welcomingtest{
+  height:100vh;
+}
   @media (max-width: 768px) {
     .imageclass {
       height: auto !important; /* Automatically adjust height for mobile */
@@ -16,6 +20,9 @@
     .swiper-wrapper {
         height: 30vh !important; 
     }
+.welcomingtest{
+  height:50vh !important;
+}
   }
 
   /* Additional adjustments for very small screens, if needed */
@@ -26,6 +33,9 @@
     .swiper-wrapper {
         height: 30vh !important; 
     }
+.welcomingtest{
+  height:50vh !important;
+}
   }
 </style>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -62,7 +72,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
       </div>
-            <div class="col-md-6 col-xs-12 col-sm-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-6 col-xs-12 col-sm-12 d-flex justify-content-center align-items-center welcomingtest">
                 <div class="text-center" style="width: 100%; text-align: center;">
                     <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold; T">Welcome To</h1>
                     <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
