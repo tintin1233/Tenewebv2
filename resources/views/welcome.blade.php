@@ -62,17 +62,20 @@
                     <div class="swiper-pagination"></div>
                 </div>
       </div>
+<div class="col-md-6 col-xs-12 col-sm-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="text-center" style="width: 100%; text-align: center;">
+        <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
+        <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
+        <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh;">
+            CIUDAD De Strike is a community that values safety, quality of life, and trust. 
+            Our neighborhood is designed to provide a comfortable and safe place for you and
+            your family to live, work, and play.
+        </p>
+        <br>
+        <a href="{{ route('pre.register.create') }}" class="btn btn-accent" style="font-size:2.5vh;">Register</a>
+    </div>
+</div>
 
-            <div class="col-md-6 col-xs-12 col-sm-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
-                <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
-                <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
-                <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh;">
-                  CIUDAD De Strike is a community that values safety, quality of life, and trust. 
-                  Our neighborhood is designed to provide a comfortable and safe place for you and
-                  your family to live, work, and play.</p>
-                  <br>
-                <a href="{{ route('pre.register.create') }}" class="btn btn-accent" style="font-size:2.5vh;">Register</a>
-            </div>
       
     </div>
 
