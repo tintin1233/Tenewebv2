@@ -111,7 +111,7 @@
     text-decoration: none;
     color: #333;
     font-size: 14px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
     transition: background-color 0.3s;
 }
 
