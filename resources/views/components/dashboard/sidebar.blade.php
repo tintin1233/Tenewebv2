@@ -209,7 +209,7 @@
         display:none;
     }
     .sidebar.collapsed .logo-text{
-        display:none;
+        display:none !important;
     }
 
     .sidebar.collapsed .logo-img {
