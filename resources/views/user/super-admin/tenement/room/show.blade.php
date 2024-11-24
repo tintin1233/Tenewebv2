@@ -130,19 +130,19 @@
                                                 <h3 class="text-lg font-bold">Family Member - {{ $family->name }}</h3>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Name</h1>
-                                                    <p>{{ $family->name }}</p>
+                                                    <p>{{ $family->name }} 123</p>
                                                 </div>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Status</h1>
-                                                    <p>{{ $family->status }}</p>
+                                                    <p>{{ $family->status }} 123</p>
                                                 </div>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Date of Birth</h1>
-                                                    <p>{{ $family->birthdate }}</p>
+                                                    <p>{{ $family->birthdate }} 123</p>
                                                 </div>
                                                 <div class="flex flex-col gap-2">
                                                     <h1 class="text-xs text-gray-500">Relationship with Head</h1>
-                                                    <p>{{ $family->relationship }}</p>
+                                                    <p>{{ $family->relationship }} 123</p>
                                                 </div>
                                             </div>
                                         </dialog>
