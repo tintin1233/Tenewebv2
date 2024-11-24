@@ -1,5 +1,7 @@
 <x-dashboard.super-admin.base>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <x-notification-message />
 
@@ -10,13 +12,21 @@
 
 
         </div>
-
+<style>
+    .bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity))) !important;
+}.bg-secondary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-s, oklch(var(--s) / var(--tw-bg-opacity))) !important;
+}
+</style>
 
         <div class="min-h-screen flex flex-col gap-2">
             <div class="w-full flex justify-center">
                 <h1 class="flex items-center text-xl font-bold gap-5"> <span>
                         <img src="{{ asset('logo.png') }}" alt="" class="w-12 aspect-square rounded-full"></span>
-                    <span>
+                    <span style="font-size:2vh;">
                         CUIDAD DE STRIKE HOMEOWNERS ASSOCIATION, INC
                         <p class="font-thin text-xs text-center">Molino Road, Molino 1, Bacoor City</p>
                     </span>
@@ -27,11 +37,19 @@
 
 
 
-            <div class="grid grid-cols-4 grid-flow-row gap-2">
+            <div class="row">
+                <div class="col-md-3 col-xs-6 col-sm-12">
                 <x-card label="revenue" :has_currency="true" icon="fi fi-rr-peso-sign" :total="$totalRevenue" />
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-12">
                 <x-card label="total amortilization" :has_currency="true" icon="fi fi-rr-peso-sign" :total="$totalAmortization" />
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-12">
                 <x-card label="total Monthly Dues" :has_currency="true" icon="fi fi-rr-peso-sign" :total="$totalMonthlyDue" />
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-12">
                 <x-card label="total Upaid" :has_currency="true" icon="fi fi-rr-peso-sign" :total="$totalUnpaid" />
+                </div>
             </div>
 
 
