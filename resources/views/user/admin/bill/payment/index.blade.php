@@ -23,14 +23,26 @@
                     <td>
                         {{ $payment->created_at->format('F d, Y h:s A') }}
                     </td>
+                    <td>
+
+                    </td>
                      <td>
                         {{ $payment->ref_no }}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
                         ₱ {{ number_format($payment->amount, 2) }}
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{$payment->status}}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
                         <a href="{{ $payment->receipt }}" target="_blank" class="w-5/6">
@@ -38,6 +50,9 @@
                         </a>
                     </td>
 
+                    <td>
+
+                    </td>
 
                     <td class="flex gap-2 justify-center">
                         <a href="{{ route('admin.bills.payments.show', ['payment' => $payment->id]) }}"
