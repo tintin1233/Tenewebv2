@@ -1,5 +1,13 @@
 <x-dashboard.super-admin.base>
 
+<style>
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-primary{
+        font-size:1.5vh;
+    }
+}
+</style>
     <div class="panel p-2">
         <x-table-body label="Announcements" :columns="['Title', 'Date & time Posted', 'Created By']" :create_url="route('super-admin.announcements.create')">
             @forelse ($announcements as $announcement)
