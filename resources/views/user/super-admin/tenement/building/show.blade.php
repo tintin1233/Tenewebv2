@@ -45,6 +45,8 @@
                         {{ $room->status }}
                     </td>
                     <td>
+                    </td>
+                    <td>
                         {{ $room->tenement->name }}
                     </td>
                     <td class="flex gap-2 justify-center">
