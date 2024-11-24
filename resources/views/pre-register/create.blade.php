@@ -5,6 +5,7 @@
     .shadow-lg  {
         width: 100% !important;
         margin-top:2vh;
+        margin-bottom:2vh;
     }
   }
 
@@ -14,6 +15,7 @@
     .shadow-lg  {
         width: 100% !important;
         margin-top:2vh;
+        margin-bottom:2vh;
     }
 }
 
