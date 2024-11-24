@@ -209,13 +209,6 @@
         <button id="burger-icon" class="burger-icon">
             <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
         </button>
-        <a href="{{ route('tenant.profile.show') }}" class="profile-link">
-            @if ($profile)
-                <img src="{{ $profile->image }}" class="profile-img" />
-            @else
-                <i class="profile-icon"></i>
-            @endif
-        </a>
     </div>
 
     <!-- Logo and Tenement Info -->
@@ -227,6 +220,14 @@
                 <span>{{ $tenement->name }}</span>
             @endif
         </h1>
+        
+        <a href="{{ route('tenant.profile.show') }}" class="profile-link">
+            @if ($profile)
+                <img src="{{ $profile->image }}" class="profile-img" />
+            @else
+                <i class="profile-icon"></i>
+            @endif
+        </a>
     </div>
 
     <!-- Sidebar Links -->
