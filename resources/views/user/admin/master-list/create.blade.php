@@ -15,7 +15,7 @@
 
     <x-dashboard.page-label :back_url="route('admin.master-list.index')" title="Add Master List" />
 
-    <div class="panel p-2">
+    <div class="panel p-2" style="overflow-x:auto;">
         <form action="{{route('admin.master-list.store')}}" method="post" class="w-full h-full flex flex-col gap-2" enctype="multipart/form-data">
             @csrf
 
