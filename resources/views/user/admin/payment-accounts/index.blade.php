@@ -3,7 +3,15 @@
 
     <x-notification-message />
 
-    <div class="panel p-2">
+
+<style>
+    @media (max-width: 768px) {
+        .text-2xl {
+            display: none;
+        }
+    }
+</style>
+    <div class="panel p-2" style="overflow-x:auto;">
 
         <div class="flex items-center justify-between">
             <h1 class="text-2xl font-bold text-primary">Payment Accounts</h1>
