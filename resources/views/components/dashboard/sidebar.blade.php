@@ -193,7 +193,9 @@
     .sidebar.collapsed .logoutname{
         display:none;
     }
-        
+    .sidebar.collapsed .logo-img{
+        display:none;
+    }
 
     .sidebar.collapsed .logo-img {
         width: 50px;
