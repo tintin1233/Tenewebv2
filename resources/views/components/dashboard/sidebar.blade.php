@@ -116,8 +116,8 @@
 }
 
 .sidebar-link.active {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
+    color: orange;
 }
 
 .sidebar-link:hover {
