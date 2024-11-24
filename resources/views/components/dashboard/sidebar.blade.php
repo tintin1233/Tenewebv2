@@ -193,6 +193,10 @@
     .sidebar.collapsed .logoutname{
         display:none;
     }
+        .sidebar.collapsed .profile-link{
+
+        display:none;
+        }
 
     .sidebar.collapsed .logo-img {
         width: 40px;
