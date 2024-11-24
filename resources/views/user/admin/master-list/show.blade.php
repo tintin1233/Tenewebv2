@@ -6,8 +6,8 @@
     <x-dashboard.page-label :back_url="route('admin.master-list.index')" title="masterList" />
 
     <div class="panel p-2">
-        <div class="flex gap-2">
-            <div class="w-1/5 flex  flex-col gap-2">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12">
                 <img src="{{ $masterList->image }}" alt="" srcset="" class="w-full h-64 object-cover">
                 <h1 class="text-center text-lg font-bold capitalize text-primary">
                     {{ "{$masterList->last_name}, {$masterList->first_name}" }}
@@ -16,7 +16,7 @@
                     {{ $masterList->email }}
                 </h1>
             </div>
-            <div class="w-5/6 min-h-32 bg-gray-50 rounded-lg p-2">
+            <div class="col-md-8 col-xs-12 col-sm-12">
                 <div class="flex items-center justify-between">
 
                     <h1 class="text-xl font-bold text-primary capitalize">
