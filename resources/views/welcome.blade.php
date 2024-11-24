@@ -1,5 +1,5 @@
 <style>
-  img, video {
+  .imageclass {
     max-width: 100%;
     height: 75vh !important;
     width:100% !important;
@@ -12,25 +12,25 @@
                 <div class="swiper mySwiper" >
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/IMG_20241030_164441 (1).jpg')}}" alt="" srcset="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{asset('images/2.jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/2.jpg')}}" alt="" srcset="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{asset('images/3.jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/3.jpg')}}" alt="" srcset="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{asset('images/4.jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/4.jpg')}}" alt="" srcset="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{asset('images/5.jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/5.jpg')}}" alt="" srcset="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{asset('images/6.jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/6.jpg')}}" alt="" srcset="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{asset('images/7.jpg')}}" alt="" srcset="">
+                            <img class="imageclass" src="{{asset('images/7.jpg')}}" alt="" srcset="">
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
