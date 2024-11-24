@@ -10,25 +10,22 @@
 </style>
     <div class="panel p-2">
         <x-table-body label="Announcements" :columns="['Title', 'Date & time Posted', 'Created By']" :create_url="route('super-admin.announcements.create')"> 
-            <tr>
-                    <td></td>
-                    <td>1
-                    </td>
-                    <td>2
-                    </td>
-            </tr>
+
             @forelse ($announcements as $announcement)
                 <tr>
                     <td></td>
                     <td>
                         {{ $announcement->title }}
                     </td>
+                    <td></td>
                     <td>
                         {{ $announcement->created_at->format('F d, Y h:s A') }}
                     </td>
+                    <td></td>
                     <td>
                         {{ $announcement->user->name }}
                     </td>
+                    <td></td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{ route('super-admin.announcements.show', ['announcement' => $announcement->id]) }}"
                             class="btn btn-accent btn-sm text-primary">
