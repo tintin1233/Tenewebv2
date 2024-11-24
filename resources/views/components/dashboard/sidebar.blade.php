@@ -19,7 +19,7 @@
 
 @endphp
 <style>
-    /* Sidebar Styles */
+/* Sidebar Styles */
 .sidebar {
     width: 250px;
     height: 100vh;
@@ -53,11 +53,12 @@
     background: none;
     border: none;
     cursor: pointer;
+    display: none; /* Hide the burger icon by default */
 }
 
 .burger-icon-icon {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f0c9'; /* Hamburger icon */
+    font-size: 28px;
+    color: #333;
 }
 
 /* Profile Image */
@@ -182,17 +183,22 @@
     }
 
     .burger-icon {
-        display: block;
+        display: block; /* Show burger icon on mobile */
+    }
+
+    .sidebar.collapsed .sidebar-link {
+        display: none; /* Hide sidebar links in collapsed state */
+    }
+
+    .sidebar.collapsed .logo-img {
+        width: 40px;
+        height: 40px;
     }
 }
 
 @media (min-width: 769px) {
     .sidebar-header .burger-icon {
         display: none;
-    }
-
-    .sidebar.collapsed {
-        width: 70px;
     }
 }
 
@@ -201,7 +207,7 @@
     <!-- Burger Icon for Mobile -->
     <div class="sidebar-header">
         <button id="burger-icon" class="burger-icon">
-            <i class="burger-icon-icon"></i>
+            <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
         </button>
         <a href="{{ route('tenant.profile.show') }}" class="profile-link">
             @if ($profile)
@@ -250,11 +256,12 @@
     </div>
 </div>
 <script>
-    // Toggle Sidebar on mobile
+    // Get references to the burger icon and sidebar
     const burgerIcon = document.getElementById('burger-icon');
     const sidebar = document.getElementById('sidebar');
 
+    // Add event listener to toggle the sidebar's 'collapsed' class
     burgerIcon.addEventListener('click', () => {
-        sidebar.classList.toggle('collapsed');
+        sidebar.classList.toggle('collapsed'); // Toggle the collapsed state
     });
 </script>
