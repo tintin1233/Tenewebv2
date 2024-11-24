@@ -37,11 +37,7 @@
     </div>
 
     <div class="panel p-2">
-    <!-- Search Bar -->
-    <x-table-body 
-        useLabelWithOptions="true" 
-        labelOptionsName="UNITS" 
-        :options="[
+        <x-table-body useLabelWithOptions="true" labelOptionsName="UNITS" :options="[
             [
                 'url' => route('admin.rooms.index', ['search' => GeneralStatus::VACANT->value]),
                 'name' => 'Available Units',
@@ -50,13 +46,9 @@
                 'url' => route('admin.rooms.index', ['search' => GeneralStatus::OCCUPIED->value]),
                 'name' => 'Occupied Units',
             ],
-        ]" 
-        :columns="['Bldg No. & Unit No.', 'Status', 'Tenement']"
-        :archived_url="route('admin.rooms.archives')"
-        :search_url="route('admin.rooms.index')" 
-        class="flex-1"
-    />
-            
+        ]" :columns="['Bldg No. & Unit No.', 'Status', 'Tenement']"
+            :archived_url="route('admin.rooms.archives')"
+            :search_url="route('admin.rooms.index')" >
             {{-- <x-slot name="additionalLabel">
                 <div class="ml-5 divide-x-2 divide-gray-800 flex items-center gap-2">
                     <a class="font-bold capitalize hover:bg-primary hover:text-accent
