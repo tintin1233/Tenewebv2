@@ -1,11 +1,21 @@
 <x-dashboard.admin.base>
 
+<style>
+@media (max-width: 768px) {
+    .text-xl{
+        font-size:1vh !important;
+    }
+    .input-generic-label{
+        font-size:1vh !important;
+    }
+}
+</style>
 
     <x-notification-message />
 
     <x-dashboard.page-label :back_url="route('admin.master-list.index')" title="masterList" />
 
-    <div class="panel p-2">
+    <div class="panel p-2" style="overflow-x:auto;">
         <div class="row">
             <div class="col-md-4 col-xs-12 col-sm-12">
                 <img src="{{ $masterList->image }}" alt="" srcset="" class="w-full h-64 object-cover">
