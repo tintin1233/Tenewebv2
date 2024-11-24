@@ -175,9 +175,6 @@
         padding: 10px;
     }
 
-    .logo-text {
-        display: none;
-    }
 
     .sidebar-link {
         padding: 10px;
