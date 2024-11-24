@@ -8,10 +8,16 @@
     }
 .text-primary {
     color: var(--fallback-p, oklch(var(--p) / var(--tw-text-opacity))) !important;
+}.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity))) !important;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
-
+.bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity))) !important;
+}
     .checker{
         font-size:1.5vh;
         margin-left:-1vh;
