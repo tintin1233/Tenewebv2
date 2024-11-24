@@ -156,13 +156,13 @@
                             <p class="text-xs text-error">{{ $errors->first('gender') }}</p>
                         @endif
                     </div> --}}
-                    {{-- <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-2">
                         <h1 class="input-generic-label">Contact No.</h1>
-                        <input type="number" name="contact_no" class="input-generic"">
+                        <input type="number" name="contact_no" class="input-generic">
                         @if ($errors->has('contact_no'))
                             <p class="text-xs text-error">{{ $errors->first('contact_no') }}</p>
                         @endif
-                    </div> --}}
+                    </div>
                 </div>
             </div>
             <button class="btn btn-sm btn-primary text-accent">Submit</button>
