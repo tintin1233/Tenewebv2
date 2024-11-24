@@ -18,258 +18,69 @@
     })->first();
 
 @endphp
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-/* Sidebar Styles */
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    border-right: 1px solid #ccc;
-    transition: width 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
-}
 
-.sidebar.collapsed {
-    width: 70px; /* Collapsed width for mobile */
-}
+<div class="w-1/5 h-screen flex flex-col bg-white border border-secondary">
+    <div class="flex items-center border-b border-secondary p-2 justify-between">
+        <div class="flex items-center gap-2">
+            <img src="{{ asset('logo.png') }}" class="h-12 w-12 rounded-full" />
 
-/* Sidebar Header */
-.sidebar-header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-}
+            <h1 class="font-bold text-lg text-neutral capitalize">
+                ciudad de strike
 
-.burger-icon {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: none; /* Hide the burger icon by default */
-}
 
-.burger-icon-icon {
-    font-size: 28px;
-    color: #333;
-}
+                @if ($tenement)
+                    <span>
+                        {{ $tenement->name }}
+                    </span>
+                @endif
 
-/* Profile Image */
-.profile-link {
-    font-size: 20px;
-}
+            </h1>
+        </div>
 
-.profile-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.profile-icon {
-    font-size: 24px;
-}
-
-/* Logo Section */
-.sidebar-logo {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.logo-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.logo-text {
-    margin-left: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* Sidebar Links */
-.sidebar-links {
-    flex-grow: 1;
-    overflow-y: auto;
-}
-
-.sidebar-link {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s;
-}
-
-.sidebar-link.active {
-    background-color: #007bff;
-    color: white;
-}
-
-.sidebar-link:hover {
-    background-color: #f4f4f4;
-}
-
-.link-name {
-    margin-left: 10px;
-}
-
-/* Badge */
-.badge-container {
-    margin-left: auto;
-}
-
-.badge {
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 50%;
-    font-size: 12px;
-}
-
-/* Logout Section */
-.sidebar-logout {
-    padding: 20px;
-    border-top: 1px solid #ddd;
-}
-
-.logout-form {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logout-icon {
-    font-size: 18px;
-}
-
-.logout-btn {
-    background: none;
-    border: none;
-    color: #333;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 25vh;
-    }
-
-    .sidebar-header {
-        padding: 10px;
-    }
-
-    .logo-text {
-        display: none;
-    }
-
-    .sidebar-link {
-        padding: 10px;
-    }
-
-    .burger-icon {
-        display: block; /* Show burger icon on mobile */
-    }
-
-    .sidebar.collapsed .link-name {
-        display: none; /* Hide sidebar links in collapsed state */
-    }
-    .sidebar.collapsed .logoutname{
-        display:none;
-    }
-        .sidebar.collapsed .profile-link{
-
-        display:none;
-        }
-
-    .sidebar.collapsed .logo-img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (min-width: 769px) {
-    .sidebar-header .burger-icon {
-        display: none;
-    }
-}
-
-</style>
-<div class="sidebar" id="sidebar">
-    <!-- Burger Icon for Mobile -->
-    <div class="sidebar-header">
-        <button id="burger-icon" class="burger-icon">
-            <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
-        </button>
-    </div>
-
-    <!-- Logo and Tenement Info -->
-    <div class="sidebar-logo">
-        <img src="{{ asset('logo.png') }}" class="logo-img" />
-        <h1 class="logo-text">
-            Ciudad de Strike
-            @if ($tenement)
-                <span>{{ $tenement->name }}</span>
-            @endif
-        </h1>
-
-        <a href="{{ route('tenant.profile.show') }}" class="profile-link">
+        <a href="{{ route('tenant.profile.show') }}" class="text-2xl text-accent">
             @if ($profile)
-                <img src="{{ $profile->image }}" class="profile-img" />
+                <img src="{{ $profile->image }}" class="h-12 w-12 rounded-full object-center" />
             @else
-                <i class="profile-icon"></i>
+                <i class="fi fi-rr-circle-user"></i>
             @endif
         </a>
     </div>
 
-    <!-- Sidebar Links -->
-    <div class="sidebar-links">
-        @foreach ($links as $link)
-            <a href="{{ $link['url'] ? route($link['url']) : '#' }}"
-                class="sidebar-link {{ Route::is($link['url']) ? 'active' : '' }}">
-                {!! $link['icon'] !!}
-                <span class="link-name">{{ $link['name'] }}</span>
+    <div class="p-4 mt-5 flex flex-col gap-5 justify-between h-full">
+        <div class="h-auto w-full  flex flex-col gap-5">
+            @foreach ($links as $link)
+                <a href="{{ $link['url'] ? route($link['url']) : '#' }}"
+                    class="flex items-center w-full text-sm gap-2 p-2 rounded-lg
+            {{ Route::is($link['url'])
+                ? 'bg-secondary font-bold text-accent'
+                : 'hover:bg-secondary hover:font-bold duration-700 hover:text-accent' }}
+            ">
+                    {!! $link['icon'] !!}
+                    <span class="capitalize">
+                        {{ $link['name'] }}
+                    </span>
 
-                @if ($link['badgeTotal'] !== 0)
-                    <div class="badge-container">
-                        <span class="badge">{{ $link['badgeTotal'] }}</span>
-                    </div>
-                @endif
-            </a>
-        @endforeach
-    </div>
+                    @if ($link['badgeTotal'] !== 0)
+                        <div class="grow flex justify-end">
+                            <span
+                                class="text-white flex items-center justify-center w-5 aspect-square rounded-full bg-error">
+                                {{ $link['badgeTotal'] }}
+                            </span>
+                        </div>
+                    @endif
+                </a>
+            @endforeach
+        </div>
+        <div>
+            <form method="POST" action="{{ route('logout') }}"
+                class="flex items-center w-full text-neutral gap-2 text-sm hover:bg-secondary hover:font-bold duration-700 p-2 rounded-lg">
 
-    <!-- Logout Form -->
-    <div class="sidebar-logout">
-        <form method="POST" action="{{ route('logout') }}" class="logout-form">
-            @csrf
-            <button class="logout-btn"><i class="fa fa-sign-out"></i> <span class="logoutname">Logout</span></button>
-        </form>
+                @csrf
+                <i class="fi fi-rr-sign-out-alt"></i>
+                <button class="capitalize">
+                    Logout
+                </button>
+            </form>
+        </div>
     </div>
 </div>
-<script>
-    // Get references to the burger icon and sidebar
-    const burgerIcon = document.getElementById('burger-icon');
-    const sidebar = document.getElementById('sidebar');
-
-    // Add event listener to toggle the sidebar's 'collapsed' class
-    burgerIcon.addEventListener('click', () => {
-        sidebar.classList.toggle('collapsed'); // Toggle the collapsed state
-    });
-</script>
