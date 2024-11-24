@@ -49,6 +49,8 @@
                     <td>
                         {{ $room->tenement->name }}
                     </td>
+                    <td>
+                    </td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{route('super-admin.buildings.room.room', ['room' => $room->id])}}"
                             class="btn btn-accent btn-sm text-primary">
