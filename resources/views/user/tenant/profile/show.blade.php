@@ -82,8 +82,8 @@
 
                 <style>
                     th{
-                        background-color:var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-                        color:orange;
+                        background-color:var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity))) !important;
+                        color:orange !important;
                     }
                 </style>
                 <div class="flex flex-col gap-2 mt-2">
