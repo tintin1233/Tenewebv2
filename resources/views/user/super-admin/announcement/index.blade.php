@@ -12,11 +12,9 @@
         <x-table-body label="Announcements" :columns="['Title', 'Date & time Posted', 'Created By']" :create_url="route('super-admin.announcements.create')"> 
             <tr>
                     <td></td>
-                    <td>
-                        {{ $announcement->title }}
+                    <td>1
                     </td>
-                    <td>
-                        {{ $announcement->created_at->format('F d, Y h:s A') }}
+                    <td>2
                     </td>
             </tr>
             @forelse ($announcements as $announcement)
