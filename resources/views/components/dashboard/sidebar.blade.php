@@ -167,7 +167,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
-        width: 70px;
+        width: 25vh;
     }
 
     .sidebar-header {
@@ -220,7 +220,7 @@
                 <span>{{ $tenement->name }}</span>
             @endif
         </h1>
-        
+
         <a href="{{ route('tenant.profile.show') }}" class="profile-link">
             @if ($profile)
                 <img src="{{ $profile->image }}" class="profile-img" />
