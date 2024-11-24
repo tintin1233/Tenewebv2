@@ -4,7 +4,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <div class="panel p-2 border-none shadow-none bg-none">
     <x-dashboard.page-label :title="__('Archived')" />
-
+<style>
+    @media (max-width: 768px) {
+        .text-xl {font-size:2vh !important;
+        }
+    }
+</style>
 
 
 

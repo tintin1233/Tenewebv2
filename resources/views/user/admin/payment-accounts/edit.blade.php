@@ -1,6 +1,12 @@
 <x-dashboard.admin.base>
 
-
+<style>
+    @media (max-width: 768px) {
+        .text-3xl {
+            font-size:2vh !important;
+        }
+    }
+</style>
     <x-notification-message />
 
     <x-dashboard.page-label :back_url="route('admin.payment-accounts.index')" title="Update Payment Account" />
