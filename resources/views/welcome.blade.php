@@ -63,7 +63,7 @@
                 </div>
       </div>
 
-            <div class="col-md-6 col-xs-12 col-sm-12" style="justify-content: center;">
+            <div class="col-md-6 col-xs-12 col-sm-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
                 <h1 class="font-bold text-4xl capitalize" style="font-size:3.5vh; font-weight:bold;">Welcome To</h1>
                 <h1 class="font-bold text-4xl capitalize" style="font-size:5.5vh; font-weight:bold;">CIUDAD De Strike HOAI</h1>
                 <p class="whitespace-pre-line text-xs" style="font-size:2.5vh; line-height:3vh;">
