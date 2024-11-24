@@ -9,7 +9,16 @@
 }
 </style>
     <div class="panel p-2">
-        <x-table-body label="Announcements" :columns="['Title', 'Date & time Posted', 'Created By']" :create_url="route('super-admin.announcements.create')">
+        <x-table-body label="Announcements" :columns="['Title', 'Date & time Posted', 'Created By']" :create_url="route('super-admin.announcements.create')"> 
+            <tr>
+                    <td></td>
+                    <td>
+                        {{ $announcement->title }}
+                    </td>
+                    <td>
+                        {{ $announcement->created_at->format('F d, Y h:s A') }}
+                    </td>
+            </tr>
             @forelse ($announcements as $announcement)
                 <tr>
                     <td></td>
