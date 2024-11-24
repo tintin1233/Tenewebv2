@@ -165,6 +165,9 @@
     cursor: pointer;
 }
 
+.w-1\/3 {
+    width: 20%;
+}
 .w-5\/6 {
      width: 83.333333%; 
     margin-left: 15vh !important;
