@@ -1,11 +1,19 @@
+<style>
+    /* Hide the content on mobile screens */
+@media (max-width: 640px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+</style>
 <div class="w-full flex justify-center bg-white p-2 sticky top-0 z-50">
     <div class="w-5/6 flex justify-between items-center">
-        <div class="flex items-center gap-5">
+        <div class="flex items-center gap-5 hide-on-mobile">
             <a href="http://127.0.0.1:8000/#">
                 <img src="{{ asset('logo.png') }}" class="h-12 w-12 rounded-full" />
             </a>
             <a href="#">
-                <h1 class="font-bold text-3xl text-neutral" style="font-size:2vh;">
+                <h1 class="font-bold text-3xl text-neutral">
                     Ciudad De Strike
                 </h1>
             </a>
