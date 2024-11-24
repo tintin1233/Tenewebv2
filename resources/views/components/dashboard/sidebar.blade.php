@@ -216,8 +216,9 @@
     <div class="sidebar-header">
         <button id="burger-icon" class="burger-icon">
             <span class="burger-icon-icon">&#9776;</span> <!-- Burger Icon -->
-            Ciudad de Strike
         </button>
+        
+            Ciudad de Strike
     </div>
 
     <!-- Logo and Tenement Info -->
@@ -229,7 +230,7 @@
             @endif
         </h1>
 
-        <a href="{{ route('tenant.profile.show') }}" class="profile-link">
+        <a href="{{ route('tenant.profile.show') }}" class="profile-link" style="float:right;">
             @if ($profile)
                 <img src="{{ $profile->image }}" class="profile-img" />
             @else
