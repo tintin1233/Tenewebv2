@@ -164,9 +164,11 @@
                     <td class="capitalize">
                         {{ $out_tenant->user->profile->last_name }}, {{ $out_tenant->user->profile->first_name}}
                     </td>
+                    <td></td>
                     <td>
                         {{ $out_tenant->room->room_number }}
                     </td>
+                    <td></td>
                     <td>
                         {{ date('F d, Y', strtotime($out_tenant->move_in_date)) }}
                     </td>

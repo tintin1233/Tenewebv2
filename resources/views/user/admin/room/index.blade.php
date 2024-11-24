@@ -71,12 +71,15 @@
                     <td>
                         {{ $room->room_number }}
                     </td>
+                    <td></td>
                     <td class="capitalize">
                         {{ $room->status }}
                     </td>
+                    <td></td>
                     <td>
                         {{ $room->tenement->name }}
                     </td>
+                    <td></td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{ route('admin.rooms.show', ['room' => $room->id]) }}"
                             class="btn btn-accent btn-sm text-primary">
