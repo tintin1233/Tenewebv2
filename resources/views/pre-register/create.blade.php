@@ -1,3 +1,21 @@
+
+<style>
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .shadow-lg  {
+        width: 100% !important;
+    }
+  }
+
+    /* Hide the content on mobile screens */
+  /* Additional adjustments for very small screens, if needed */
+  @media (max-width: 480px) {
+    .shadow-lg  {
+        width: 100% !important;
+    }
+}
+
+</style>
 <x-landing-page.base>
     <div class="w-full h-full flex justify-center items-center">
         <div class="w-2/4 h-auto bg-white shadow-lg rounded-lg p-5 flex flex-col gap-2">
