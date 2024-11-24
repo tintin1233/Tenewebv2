@@ -4,11 +4,11 @@
     <x-notification-message />
 
 
-    <div class="panel p-2">
+    <div class="panel p-2" >
         <x-table-body :columns="['Last Name', 'First Name', 'Middle Name', 'Bldg No. & Unit No.', 'Tenement',  'Date and Time']" label="Master Lists"
         :create_url="route('super-admin.master-list.create')"
         :search_url="route('super-admin.master-list.index')"
-        >
+         style="overflow-x:auto;">
 
         <x-slot name="additionalLabel">
             <div class="ml-5 divide-x-2 divide-gray-800 gap-5 flex items-center ">
