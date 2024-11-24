@@ -43,14 +43,15 @@
                 <a href="{{ route('pre.register.create') }}" class="btn btn-accent">Register</a>
             </div>
         </div>
-    </div><section class="text-gray-600 body-font">
+    </div>
+    <section class="text-gray-600 body-font">
   <div class="container px-4 py-12 mx-auto">
     <div class="flex flex-col text-center w-full mb-8">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Unit</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">View</p>
     </div>
-    <div class="flex flex-wrap -mx-2">
-      <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="p-2">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{asset('images/u1.jpg')}}">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -60,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
+      <div class="p-2">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{asset('images/u2.jpg')}}">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -70,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
+      <div class="p-2">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{asset('images/3.jpg')}}">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -80,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
+      <div class="p-2">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{asset('images/u4.jpg')}}">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -90,7 +91,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
+      <div class="p-2">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{asset('images/u5.jpg')}}">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
@@ -100,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 lg:w-1/3 p-2">
+      <div class="p-2">
         <div class="flex relative">
           <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{asset('images/u6.jpg')}}">
           <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
