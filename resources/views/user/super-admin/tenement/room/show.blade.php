@@ -108,22 +108,17 @@
                     <div class="flex flex-col gap-2 mt-2">
                         <x-table-body :columns="['name', 'status', 'Date of Birth', 'Relationship with Head']" label="">
 
-                                <tr>
-                                    <td>123</td>
-                                    <td>123</td>
-                                    <td>123</td>
-                                    <td>123</td>
-                                    <td>123</td>
-                                    <td>123</td>
-
-                                </tr>
                             @foreach ($tenant->user->familyMembers as $family)
                                 <tr>
                                     <td></td>
                                     <td>{{ $family->name }}</td>
+                                    <td></td>
                                     <td>{{ $family->status }}</td>
+                                    <td></td>
                                     <td>{{ $family->birthdate }}</td>
+                                    <td></td>
                                     <td>{{ $family->relationship }}</td>
+                                    <td></td>
                                     <td class="flex gap-2 justify-center">
                                         <button
                                             onclick="document.getElementById('show_modal_{{ $family->id }}').showModal()"
@@ -323,21 +318,47 @@
                     {{-- <div class="flex flex-col gap-2 mt-5">
                         <x-table-body :columns="['name', 'amount', 'type', 'status']" label="Bills">
 
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td></td>
+                                    <td class="flex gap-2 justify-center">
+
+                                    </td>
+                                </tr>
                             @forelse ($tenant->bills as $bill)
                                 <tr>
                                     <td></td>
                                     <td>
                                         {{ $bill->name }}
                                     </td>
+                                    <td></td>
                                     <td>
                                         {{ $bill->amount }}
                                     </td>
+                                    <td></td>
                                     <td>
                                         {{ $bill->type }}
                                     </td>
+                                    <td></td>
                                     <td>
                                         {{ $bill->status }}
                                     </td>
+                                    <td></td>
                                     <td class="flex gap-2 justify-center">
 
                                     </td>
