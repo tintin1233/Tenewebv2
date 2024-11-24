@@ -11,16 +11,15 @@
 
         </div>
     </div>
-
-    <div class="grid grid-cols-3 grid-flow-row gap-2">
-        <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Amortization Bills"
-         :total="$totalAmortizationBill" />
-        <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Dues
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Amortization Bills"
+     :total="$totalAmortizationBill" />
+    <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Dues
 Bills"  :total="$totalMonthlyDuesBill" />
-        <x-card icon="fi fi-rr-megaphone" label="Announcement" :total="$totalAnnouncement" />
-        <x-card icon="i fi-rr-file-invoice-dollar" label="Total Ammortilization" :hasCurrency="true" :total="$totalAmortization" />
-        <x-card icon="i fi-rr-file-invoice-dollar" label="Total Monthly Dues" :hasCurrency="true" :total="$totalMonthlyDues" />
-    </div>
+    <x-card icon="fi fi-rr-megaphone" label="Announcement" :total="$totalAnnouncement" />
+    <x-card icon="i fi-rr-file-invoice-dollar" label="Total Ammortilization" :hasCurrency="true" :total="$totalAmortization" />
+    <x-card icon="i fi-rr-file-invoice-dollar" label="Total Monthly Dues" :hasCurrency="true" :total="$totalMonthlyDues" />
+</div>
 
     <x-dashboard.page-label title="Announcements Board" />
 
