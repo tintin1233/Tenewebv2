@@ -1,5 +1,7 @@
 <x-dashboard.tenant.base>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <div class="w-full h-64 rounded-lg bg-center bg-no-repeat bg-cover relative"
         style="background-image: url({{ $tenement->image }})">
@@ -11,15 +13,26 @@
 
         </div>
     </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-    <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Amortization Bills"
-     :total="$totalAmortizationBill" />
-    <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Dues
+
+    <div class="row">
+        <div class="col-md-4 col-xs-6 col-sm-12">
+        <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Amortization Bills"
+         :total="$totalAmortizationBill" />
+        </div>
+        <div class="col-md-4 col-xs-6 col-sm-12">
+        <x-card icon="fi fi-rr-file-invoice-dollar" :hasCurrency="true" label="Monthly Dues
 Bills"  :total="$totalMonthlyDuesBill" />
-    <x-card icon="fi fi-rr-megaphone" label="Announcement" :total="$totalAnnouncement" />
-    <x-card icon="i fi-rr-file-invoice-dollar" label="Total Ammortilization" :hasCurrency="true" :total="$totalAmortization" />
-    <x-card icon="i fi-rr-file-invoice-dollar" label="Total Monthly Dues" :hasCurrency="true" :total="$totalMonthlyDues" />
-</div>
+        </div>
+        <div class="col-md-4 col-xs-6 col-sm-12">
+        <x-card icon="fi fi-rr-megaphone" label="Announcement" :total="$totalAnnouncement" />
+        </div>
+        <div class="col-md-4 col-xs-6 col-sm-12">
+        <x-card icon="i fi-rr-file-invoice-dollar" label="Total Ammortilization" :hasCurrency="true" :total="$totalAmortization" />
+        </div>
+        <div class="col-md-4 col-xs-6 col-sm-12">
+        <x-card icon="i fi-rr-file-invoice-dollar" label="Total Monthly Dues" :hasCurrency="true" :total="$totalMonthlyDues" />
+    </div>
+    </div>
 
     <x-dashboard.page-label title="Announcements Board" />
 
