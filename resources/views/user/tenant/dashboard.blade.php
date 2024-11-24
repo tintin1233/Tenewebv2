@@ -34,7 +34,7 @@ Bills"  :total="$totalMonthlyDuesBill" />
                 <div class="flex flex-col gap-2 bg-white rounded-lg shadow-md p-2 justify-between w-full h-auto">
                     <div class="flex justify-between items-center">
                         <h1 class="text-xl font-bold text-primary capitalize">
-                            {{ $announcement->title }}
+                            {{ $announcement->title }} 123
                         </h1>
                         <p class="text-xs text-gray-500">
                             {{ date('F d, Y h:s A', strtotime($announcement->created_at)) }}
