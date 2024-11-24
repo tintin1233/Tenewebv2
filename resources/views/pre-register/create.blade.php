@@ -4,6 +4,7 @@
   @media (max-width: 768px) {
     .shadow-lg  {
         width: 100% !important;
+        margin-top:2vh;
     }
   }
 
@@ -12,6 +13,7 @@
   @media (max-width: 480px) {
     .shadow-lg  {
         width: 100% !important;
+        margin-top:2vh;
     }
 }
 
