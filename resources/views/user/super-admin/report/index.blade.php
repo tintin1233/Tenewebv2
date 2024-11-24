@@ -84,26 +84,50 @@
                             {{ $amortization->created_at->format('F') }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             ₱ {{ number_format($amortization->amount) }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             {{ $amortization->tenant->user->profile->last_name }},
                             {{ $amortization->tenant->user->profile->first_name }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ $amortization->tenant->room->room_number }}
+                        </td>
+                        <td>
+
                         </td>
                         <td class="capitalize">
                             {{ $amortization->type }}
+                        </td>
+                        <td>
+
                         </td>
                         <td class="capitalize">
                             {{ $amortization->status }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ date('F d, Y', strtotime($amortization->due_date)) }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ $amortization->created_by }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             {{ $amortization->created_at->format('F d, Y h:s A') }}
@@ -167,26 +191,50 @@
                             {{ $monthlyDue->created_at->format('F') }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             ₱ {{ number_format($monthlyDue->amount) }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             {{ $monthlyDue->tenant->user->profile->last_name }},
                             {{ $monthlyDue->tenant->user->profile->first_name }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ $monthlyDue->tenant->room->room_number }}
+                        </td>
+                        <td>
+
                         </td>
                         <td class="capitalize">
                             {{ $monthlyDue->type }}
+                        </td>
+                        <td>
+
                         </td>
                         <td class="capitalize">
                             {{ $monthlyDue->status }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ date('F d, Y', strtotime($monthlyDue->due_date)) }}
                         </td>
                         <td>
+
+                        </td>
+                        <td>
                             {{ $monthlyDue->created_by }}
+                        </td>
+                        <td>
+
                         </td>
                         <td>
                             {{ $monthlyDue->created_at->format('F d, Y h:s A') }}
