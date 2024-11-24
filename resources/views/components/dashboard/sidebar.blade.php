@@ -176,7 +176,9 @@
      width: 83.333333%; 
     margin-left: 5vh;
 }
-
+.w-1\/3 {
+    width: 100%;
+}
     .sidebar {
         width: 25vh;
     }
@@ -214,6 +216,13 @@
 }
 
 @media (min-width: 769px) {
+.w-5\/6 {
+     width: 83.333333%; 
+    margin-left: 5vh;
+}
+.w-1\/3 {
+    width: 100%;
+}
     .sidebar-header .burger-icon {
         display: none;
     }
