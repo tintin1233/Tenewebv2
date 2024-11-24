@@ -7,7 +7,6 @@
         font-size:2vh;
     }
 .text-primary {
-    --tw-text-opacity: 1;
     color: var(--fallback-p, oklch(var(--p) / var(--tw-text-opacity))) !important;
 }
 /* Responsive Design */
@@ -17,6 +16,9 @@
         font-size:1.5vh;
         margin-left:-1vh;
     }
+.text-primary {
+    color: var(--fallback-p, oklch(var(--p) / var(--tw-text-opacity))) !important;
+}
 }
 </style>
     <div class="panel p-2 border-none shadow-none bg-none">
