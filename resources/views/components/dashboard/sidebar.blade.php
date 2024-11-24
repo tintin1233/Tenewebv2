@@ -21,15 +21,15 @@
 <style>
     /* Optional: Custom Transition for Sidebar */
 #sidebar {
-    transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out  !important;
 }
 
 #sidebar-content {
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out !important;
 }
 
 #sidebar.hidden {
-    display: none;
+    display: none  !important;
 }
 
 </style>
