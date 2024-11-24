@@ -2,7 +2,11 @@
 
 
     <x-notification-message />
-
+<style>
+    .table{
+        width:100% !important;
+    }
+</style>
 
     <div class="panel p-2" style="overflow-x:auto !important;">
         <x-table-body :columns="['Last Name', 'First Name', 'Middle Name', 'Bldg No. & Unit No.', 'Tenement',  'Date and Time']" label="Master Lists"
