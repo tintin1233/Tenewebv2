@@ -31,12 +31,15 @@
                     <td>
                         {{ $tenant->profile->last_name }}, {{$tenant->profile->first_name}}
                     </td>
+                    <td></td>
                     <td>
                         {{ $tenant->tenant->room->room_number }}
                     </td>
+                    <td></td>
                     <td>
                         {{ date('F d, Y', strtotime($tenant->tenant->move_in_date)) }}
                     </td>
+                    <td></td>
 
                     <td class="flex gap-2 justify-center">
 

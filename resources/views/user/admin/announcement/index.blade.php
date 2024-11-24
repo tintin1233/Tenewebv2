@@ -20,12 +20,15 @@
                         @endif
                         {{ $announcement->title }}
                     </td>
+                    <td></td>
                     <td>
                         {{ $announcement->created_at->format('F d, Y h:s A') }}
                     </td>
+                    <td></td>
                     <td>
                         {{ $announcement->user->name }}
                     </td>
+                    <td></td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{ route('admin.announcements.show', ['announcement' => $announcement->id]) }}"
                             class="btn btn-accent btn-sm text-primary">

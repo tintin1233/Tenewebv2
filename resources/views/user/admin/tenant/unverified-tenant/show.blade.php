@@ -2,15 +2,15 @@
 
     <x-dashboard.page-label :back_url="route('admin.unverified-tenant.index')" title="Pre Register Tenant" />
 
-    <div class="panel p-2">
-        <div class="flex gap-2 h-full w-full">
-            <div class="w-1/5 h-full flex flex-col gap-2">
+    <div class="panel p-2" style="overflow-x:auto;">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12">
                 <img src="{{$unverifiedTenant->image}}"  class="h-64 w-38 object-cover" />
                 <h1 class="text-center font-bold capitalize text-lg">{{$unverifiedTenant->tenant_type}}</h1>
                 <h1 class="text-center font-bold">{{$unverifiedTenant->email}}</h1>
             </div>
 
-            <div class="bg-gray-50 rounded-lg flex flex-col gap-2 w-5/6 p-2 h-full justify-between">
+            <div class="col-md-8 col-xs-12 col-sm-12">
                 <h1 class="text-primary text-xl font-bold text-center">Personal Information</h1>
                 <div class="grid grid-cols-3 grid-flow-row gap-5">
                     <div class="flex flex-col gap-2">
