@@ -1,10 +1,25 @@
-<x-dashboard.admin.base>
+
+<style>
+    .table{
+        width:100% !important;
+    }
+</style>
+<style>
+@media (max-width: 768px) {
+    .text-2xl {
+        font-size:1.5vh !important;
+    }
+    .input-generic-label{
+        font-size:1vh !important;
+    }
+}
+</style><x-dashboard.admin.base>
 
 
     <x-notification-message />
 
 
-    <div class="panel p-2">
+    <div class="panel p-2" style="overflow-x:auto !important;">
         <x-table-body :columns="['Last Name', 'First Name', 'Middle Name', 'Room Number', 'Date and Time']"
          label="Master Lists"
 
