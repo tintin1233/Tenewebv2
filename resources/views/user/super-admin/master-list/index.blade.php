@@ -7,7 +7,16 @@
         width:100% !important;
     }
 </style>
-
+<style>
+@media (max-width: 768px) {
+    .text-2xl {
+        font-size:1.5vh !important;
+    }
+    .input-generic-label{
+        font-size:1vh !important;
+    }
+}
+</style>
     <div class="panel p-2" style="overflow-x:auto !important;">
         <x-table-body :columns="['Last Name', 'First Name', 'Middle Name', 'Bldg No. & Unit No.', 'Tenement',  'Date and Time']" label="Master Lists"
         :create_url="route('super-admin.master-list.create')"
@@ -42,16 +51,31 @@
                         {{ $masterList->last_name }}
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{ $masterList->first_name }}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
                         {{ $masterList->middle_name ?? 'N\A' }}
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{ $masterList->room_number }}
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{ $masterList->tenement->name }}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
                         {{ $masterList->created_at->format('F d, Y h:s A') }}

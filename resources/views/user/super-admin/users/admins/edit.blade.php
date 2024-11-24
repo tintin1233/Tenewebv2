@@ -1,3 +1,13 @@
+<style>
+@media (max-width: 768px) {
+    .text-3xl {
+        font-size:2vh !important;
+    }
+    .input-generic-label{
+        font-size:1.5vh !important;
+    }
+}
+</style>
 <x-dashboard.super-admin.base>
 
     <x-notification-message />
