@@ -83,7 +83,7 @@ class MasterListController extends Controller
             'first_name' => 'required',
             // 'age' => 'required',
             // 'gender' => 'required',
-            // 'contact_no' => 'required',
+            'contact_no' => 'required',
             'room' => 'required',
             'tenement' => 'required'
         ]);
@@ -99,7 +99,7 @@ class MasterListController extends Controller
             'first_name' => $request->first_name,
             'middle_name' => $request->middle_name,
             'age' => 'N\A',
-            'contact_no' => 'N\A',
+            'contact_no' => $request->contact_no,
             'room_number' => $request->room,
             'tenement_id' => $request->tenement
         ]);
