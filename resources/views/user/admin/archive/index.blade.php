@@ -6,7 +6,7 @@
     <x-dashboard.page-label :title="__('Archived')" />
 <style>
     @media (max-width: 768px) {
-        .text-xl {font-size:2vh !important;
+        .text-xl {font-size:1.5vh !important;
         }
     }
 </style>
