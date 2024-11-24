@@ -1,6 +1,16 @@
 <x-dashboard.admin.base>
 
 
+<style>
+@media (max-width: 768px) {
+    .text-3xl {
+        font-size:2vh !important;
+    }
+    .input-generic-label{
+        font-size:1vh !important;
+    }
+}
+</style>
     <x-notification-message />
 
     <x-dashboard.page-label :back_url="route('admin.master-list.index')" title="Add Master List" />

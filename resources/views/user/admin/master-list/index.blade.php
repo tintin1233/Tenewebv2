@@ -19,18 +19,33 @@
                         {{ $masterList->last_name }} 
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{ $masterList->first_name }}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
                         {{ $masterList->middle_name ?? 'N\A' }}
                     </td>
                     <td>
+
+                    </td>
+                    <td>
                         {{ $masterList->room_number }}
+                    </td>
+                    <td>
+
                     </td>
                     <td>
                         {{$masterList->created_at->format('F d, Y h:s A')}}
                     </td>
 
+                    <td>
+
+                    </td>
                     <td class="flex gap-2 justify-center">
                         <a href="{{route('admin.master-list.show', ['master_list' => $masterList->id])}}" class="btn btn-accent btn-sm text-primary">
                             View
