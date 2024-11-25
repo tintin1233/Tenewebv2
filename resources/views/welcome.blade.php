@@ -9,7 +9,7 @@
                     life, and trust.
                     Our neighborhood is designed to provide a comfortable and safe place for you and
                     your family to live, work, and play.</p>
-                <a href="{{ route('pre.register.create') }}" class="btn btn-accent">Register</a>
+                
             </div>
         </div>
     </div>
